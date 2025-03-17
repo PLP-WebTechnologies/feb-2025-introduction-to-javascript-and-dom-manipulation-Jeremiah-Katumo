@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            margin: 20px auto;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript & DOM Manipulation</h1>
+    <p id="text">Click the button to change this text!</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <div id="box"></div>
+    <button onclick="changeColor()">Change Box Color</button>
+
+    <button onclick="toggleElement()">Show/Hide Element</button>
+    <p id="toggleText" class="hidden">You toggled me! 🎉</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
